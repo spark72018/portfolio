@@ -8,12 +8,7 @@ import FeaturedWork from './components/FeaturedWork';
 import Skills from './components/Skills';
 import About from './components/About';
 import Footer from './components/Footer';
-import {
-  PROJECT_INFO_ARR,
-  LINKEDIN_URL,
-  GITHUB_URL,
-  WHITE_BACKGROUND_SCROLL_POSITION
-} from './constants';
+import { PROJECT_INFO_ARR, LINKEDIN_URL, GITHUB_URL } from './constants';
 import './App.css';
 
 class App extends Component {
@@ -21,6 +16,8 @@ class App extends Component {
     hamburgerOpen: false,
     onWhiteBackground: false
   };
+
+  skillsSectionRef = React.createRef();
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
@@ -59,9 +56,10 @@ class App extends Component {
 
   handleScroll = async e => {
     const scrollTopVal = document.getElementsByTagName('html')[0].scrollTop;
-    console.log('scrollTopVal is', scrollTopVal);
+    const skillsSectionPosition = this.skillsSectionRef.current.offsetTop;
+    // console.log('scrollTopVal is', scrollTopVal);
 
-    return scrollTopVal > WHITE_BACKGROUND_SCROLL_POSITION
+    return scrollTopVal + 120 >= skillsSectionPosition
       ? this.setOnWhiteBackground(true)
       : this.setOnWhiteBackground(false);
   };
@@ -81,7 +79,7 @@ class App extends Component {
         />
         <Intro logoImgSrc={logo} />
         <FeaturedWork projectInfoArr={PROJECT_INFO_ARR} />
-        <Skills />
+        <Skills skillsSectionRef={this.skillsSectionRef} />
         <About logoImgSrc={selfLogo} />
         <Footer linkedinLink={LINKEDIN_URL} githubLink={GITHUB_URL} />
       </div>

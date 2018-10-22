@@ -11,14 +11,13 @@ import {
   FaNode
 } from 'react-icons/fa';
 
-export default function Skills(props) {
+export default function Skills({ skillsSectionRef }) {
   const iconStyles = {
     color: '#1DC17F',
     size: '5em'
   };
   return (
-    <section id="skills" className="container fade-in">
-      {/* <hr /> */}
+    <section ref={skillsSectionRef} id="skills" className="container fade-in">
       <h2>Skills</h2>
       <div className="icon-container">
         <IconContext.Provider value={iconStyles}>

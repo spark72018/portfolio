@@ -82,5 +82,3 @@ export const HAMBURGER_MENU_OPTIONS = [
 export const LINKEDIN_URL = 'https://linkedin.com/in/saung-park';
 
 export const GITHUB_URL = 'https://github.com/spark72018';
-
-export const WHITE_BACKGROUND_SCROLL_POSITION = 2018;

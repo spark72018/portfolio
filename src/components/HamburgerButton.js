@@ -5,8 +5,8 @@ export default function HamburgerButton({
   open,
   onWhiteBackground
 }) {
-  console.log('onWhiteBackground', onWhiteBackground);
   let buttonBackground, firstLine, secondLine, thirdLine;
+
   if (open) {
     buttonBackground = 'hamburger open purple-background';
     firstLine = 'line white-background';
