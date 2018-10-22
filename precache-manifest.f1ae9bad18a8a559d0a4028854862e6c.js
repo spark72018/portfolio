@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/wikiViewer.08fc0e4a.png"
   },
   {
-    "revision": "7ac9a6eabbc335937b73",
+    "revision": "f792fd68bcff2466a18d",
     "url": "/portfolio/static/css/main.5343bbd0.chunk.css"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/memory-game.dd0756fb.PNG"
   },
   {
-    "revision": "7ac9a6eabbc335937b73",
-    "url": "/portfolio/static/js/main.7ac9a6ea.chunk.js"
+    "revision": "f792fd68bcff2466a18d",
+    "url": "/portfolio/static/js/main.f792fd68.chunk.js"
   },
   {
     "revision": "16bb9a6fefbd1640d6a4e43b22a9a5e1",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/chart-stock-history.8c454bd6.png"
   },
   {
-    "revision": "d14a800141db55f566ef56f612f6e416",
+    "revision": "c7b53a0df3aa5bf018bdb6ef0992c8af",
     "url": "/portfolio/index.html"
   }
 ];
